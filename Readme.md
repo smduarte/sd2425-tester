@@ -112,13 +112,13 @@ lançadas os containers com o vosso trabalho e iniciar a execução dos
 testes. Podem ajustar este valor consoante a capacidade do vosso 
 computador e as operações que estejam a fazer na fase de inicialização.
 
+<!---
 * **-log OFF\|ALL\|FINE\|FINEST** : Permite controlar o nível de mensagens 
 gerado pelo programa. Por exemplo, ao usarem a opção **-log FINE**, o 
 programa vai indicar todas as operações que está a fazer ao vosso sistema, 
 indicando as mensagens recebidas e as esperadas, como se apresenta na 
 imagem seguinte:
 
-<!---
 * **-textsize \<len\>** : Permite indicar a dimensão máxoma do texto das 
 mensagens criadas.
 
@@ -162,9 +162,11 @@ com os comentários das respetivas interfaces, disponíveis em: [https://github.
 As versões do *Tester* são incrementais, i.e., a versão N do *Tester* executará todos os testes das versões anteriores.
 Nesta secção indicam-se as funcionalidades testadas por cada versão.
 
-#### Versão 0
+#### Versão 1 --ALFA--
 
-Testa a integridade do motor Docker usado pelo Tester.
+##### Testes:
++ **1x** - Testa a integridade do ambiente de teste;
++ **2x** - Testa mecanismo descoberta no serviço **Users**.
 
 <!---
 #### Versão 1
