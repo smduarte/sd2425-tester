@@ -169,7 +169,7 @@ Nesta secção indicam-se as funcionalidades testadas por cada versão.
 
 #### Versão 2
 
-+ **3x** - Testa o serviço Users REST, isoladamente, sem tocar no **avatarUrl**;
++ Testes **3x** - Testa o serviço Users REST, isoladamente, sem tocar no **avatarUrl**;
 
 <!---
 #### Versão 1
