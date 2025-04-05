@@ -162,11 +162,14 @@ com os comentários das respetivas interfaces, disponíveis em: [https://github.
 As versões do *Tester* são incrementais, i.e., a versão N do *Tester* executará todos os testes das versões anteriores.
 Nesta secção indicam-se as funcionalidades testadas por cada versão.
 
-#### Versão 1 --ALFA--
+#### Versão 1 
 
-##### Testes:
-+ **1x** - Testa a integridade do ambiente de teste;
-+ **2x** - Testa mecanismo descoberta no serviço **Users**.
++ Testes **1x** - Testa a integridade do ambiente de teste;
++ Testes **2x** - Testa mecanismo descoberta no serviço **Users**.
+
+#### Versão 2
+
++ **3x** - Testa o serviço Users REST, isoladamente, sem tocar no **avatarUrl**;
 
 <!---
 #### Versão 1
