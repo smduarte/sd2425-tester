@@ -174,7 +174,8 @@ Nesta secção indicam-se as funcionalidades testadas por cada versão.
 #### Versão 3
 
 + Testes **4x** - Testa os serviços Image + Users REST;
-+ Testes **5x** - (versão beta) Testa os serviços Image + Users GRPC; 
++ Testes **5x** - (versão beta) Testa o Users GRPC; 
++ Testes **6x** - (versão beta) Testa o Image + Users GRPC; 
 
 <!---
 #### Versão 1
