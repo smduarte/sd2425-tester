@@ -171,6 +171,11 @@ Nesta secção indicam-se as funcionalidades testadas por cada versão.
 
 + Testes **3x** - Testa o serviço Users REST, isoladamente, sem tocar no **avatarUrl**;
 
+#### Versão 3
+
++ Testes **4x** - Testa os serviços Image + Users REST;
++ Testes **5x** - (versão beta) Testa os serviços Image + Users GRPC; 
+
 <!---
 #### Versão 1
 Testa as seguintes funcionalidades (REST):
