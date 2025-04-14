@@ -189,7 +189,13 @@ Nesta secção indicam-se as funcionalidades testadas por cada versão.
 * getPosts (s/ Timestamp) - (7g)
 * getPosts (c/ Timestamp + MOST_REPLIES) - (7h)
 * getPosts (c/ Timestamp + MOST_UP_VOTES) - (7i)
-    
+
+### INTERNAL_SERVER_ERROR
+
+Normalmente, estes erros correspondem a uma excepção que não tratada que 
+ocorreu em resposta a um pedido ao servidor. A classe GenericExceptionMapper neste
+repositório pode ser registada (ResourceConfig) para ajudar a depurar o problema.
+
 <!---
 #### Versão 1
 Testa as seguintes funcionalidades (REST):
@@ -254,6 +260,7 @@ RETIRADO : Testa as seguintes funcionalidades (GRPC):
 * Shorts+Blobs com falhas para o users: create, get, get feed, follow/unfollow (11a)
 * Shorts+Blobs com falhas para o shorts: create, get, get feed, follow/unfollow (11b)
 * Shorts+Blobs com falhas longas users/shorts (11c)
+
 
 -->
 
