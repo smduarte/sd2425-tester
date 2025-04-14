@@ -174,9 +174,22 @@ Nesta secção indicam-se as funcionalidades testadas por cada versão.
 #### Versão 3
 
 + Testes **4x** - Testa os serviços Image + Users REST;
-+ Testes **5x** - (versão beta) Testa o Users GRPC; 
-+ Testes **6x** - (versão beta) Testa o Image + Users GRPC; 
++ Testes **5x** - Testa o Users GRPC; 
++ Testes **6x** - Testa o Image + Users GRPC; 
 
+#### Versão 4
+
++ Testes **7x** - (ALPHA, incompleto) Testa os serviços Content + Users REST;
+* createPost, getPost - (7a)
+* Invalid getPost - (7b)
+* getPostAnswers (c/ TIMEOUT 0) - (7c)
+* upVote/DownVote - (7d)
+* getupVotes/getDownVotes - (7e)
+* getPosts (c/ Timestamp) - (7f)
+* getPosts (s/ Timestamp) - (7g)
+* getPosts (c/ Timestamp + MOST_REPLIES) - (7h)
+* getPosts (c/ Timestamp + MOST_UP_VOTES) - (7i)
+    
 <!---
 #### Versão 1
 Testa as seguintes funcionalidades (REST):
