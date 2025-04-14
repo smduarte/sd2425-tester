@@ -192,9 +192,9 @@ Nesta secção indicam-se as funcionalidades testadas por cada versão.
 
 ### INTERNAL_SERVER_ERROR
 
-Normalmente, estes erros correspondem a uma excepção que não tratada que 
-ocorreu em resposta a um pedido ao servidor. A classe GenericExceptionMapper neste
-repositório pode ser registada (ResourceConfig) para ajudar a depurar o problema.
+Normalmente, estes erros correspondem a uma excepção, não apanhada, que 
+ocorreu no servidor, na resposta a um pedido. A classe GenericExceptionMapper neste
+repositório pode ser registada (ResourceConfig) nos servidores REST para ajudar a depurar o problema.
 
 <!---
 #### Versão 1
