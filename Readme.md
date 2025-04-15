@@ -189,6 +189,7 @@ Nesta secção indicam-se as funcionalidades testadas por cada versão.
 * getPosts (s/ Timestamp) - (7g)
 * getPosts (c/ Timestamp + MOST_REPLIES) - (7h)
 * getPosts (c/ Timestamp + MOST_UP_VOTES) - (7i)
+* getPostAnswers (c/ MAX_TIMEOUT) - (7j)
 
 ### INTERNAL_SERVER_ERROR
 
