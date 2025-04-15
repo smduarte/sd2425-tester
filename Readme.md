@@ -191,6 +191,17 @@ Nesta secção indicam-se as funcionalidades testadas por cada versão.
 * getPosts (c/ Timestamp + MOST_UP_VOTES) - (7i)
 * getPostAnswers (c/ MAX_TIMEOUT) - (7j)
 
+#### Versão 5
+
++ Testes **7x** - Testa os serviços Content + Users REST;
+
+* getPost (com validação do número de votos do post) - (7j)
+
++ Testes **8x** - Testa os serviços Content + Users GRPC;
+
+* São os mesmos testes **7x** mas, com o serviço Users e Content em GRPC
+
+
 ### INTERNAL_SERVER_ERROR
 
 Normalmente, estes erros correspondem a uma excepção, não apanhada, que 
