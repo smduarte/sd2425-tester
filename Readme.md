@@ -194,7 +194,7 @@ Nesta secção indicam-se as funcionalidades testadas por cada versão.
 ### INTERNAL_SERVER_ERROR
 
 Normalmente, estes erros correspondem a uma excepção, não apanhada, que 
-ocorreu no servidor, na resposta a um pedido. A classe GenericExceptionMapper neste
+ocorreu no servidor, na resposta a um pedido. A classe [GenericExceptionMapper](https://raw.githubusercontent.com/smduarte/sd2425-tester/refs/heads/main/GenericExceptionMapper.java) neste
 repositório pode ser registada (ResourceConfig) nos servidores REST para ajudar a depurar o problema.
 
 <!---
