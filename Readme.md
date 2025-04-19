@@ -180,38 +180,34 @@ Nesta secção indicam-se as funcionalidades testadas por cada versão.
 #### Versão 4
 
 + Testes **7x** - (ALPHA, incompleto) Testa os serviços Content + Users REST;
-* createPost, getPost - (7a)
-* Invalid getPost - (7b)
-* getPostAnswers (c/ TIMEOUT 0) - (7c)
-* upVote/DownVote - (7d)
-* getupVotes/getDownVotes - (7e)
-* getPosts (c/ Timestamp) - (7f)
-* getPosts (s/ Timestamp) - (7g)
-* getPosts (c/ Timestamp + MOST_REPLIES) - (7h)
-* getPosts (c/ Timestamp + MOST_UP_VOTES) - (7i)
-* getPostAnswers (c/ MAX_TIMEOUT) - (7j)
+  * createPost, getPost - (7a)
+  * Invalid getPost - (7b)
+  * getPostAnswers (c/ TIMEOUT 0) - (7c)
+  * upVote/DownVote - (7d)
+  * getupVotes/getDownVotes - (7e)
+  * getPosts (c/ Timestamp) - (7f)
+  * getPosts (s/ Timestamp) - (7g)
+  * getPosts (c/ Timestamp + MOST_REPLIES) - (7h)
+  * getPosts (c/ Timestamp + MOST_UP_VOTES) - (7i)
+  * getPostAnswers (c/ MAX_TIMEOUT) - (7j)
 
 #### Versão 5
 
 + Testes **7x** - Testa os serviços Content + Users REST;
-
-* getPost (com validação do número de votos do post) - (7k)
+  * getPost (com validação do número de votos do post) - (7k)
 
 + Testes **8x** - Testa os serviços Content + Users GRPC;
-
-* São os mesmos testes **7x** mas, com o serviço Users e Content em GRPC
+  * São os mesmos testes **7x** mas, com o serviço Users e Content em GRPC
 
 #### Versão 6
 
 + Testes **7x** - Testa os 3 serviços em REST;
-
-* updatePost - (7l)
-* deletePost - (7m)
-* deleteAuthor - (7n)
+  * updatePost - (7l)
+  * deletePost - (7m)
+  * deleteAuthor - (7n)
 
 + Testes **8x** - Testa os 3 serviços em GRPC;
- 
-* São os mesmos testes **7x**;
+  * São os mesmos testes **7x**;
 
 
 ### INTERNAL_SERVER_ERROR
