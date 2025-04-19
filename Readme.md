@@ -195,11 +195,23 @@ Nesta secção indicam-se as funcionalidades testadas por cada versão.
 
 + Testes **7x** - Testa os serviços Content + Users REST;
 
-* getPost (com validação do número de votos do post) - (7j)
+* getPost (com validação do número de votos do post) - (7k)
 
 + Testes **8x** - Testa os serviços Content + Users GRPC;
 
 * São os mesmos testes **7x** mas, com o serviço Users e Content em GRPC
+
+#### Versão 6
+
++ Testes **7x** - Testa os 3 serviços em REST;
+
+* updatePost - (7l)
+* deletePost - (7m)
+* deleteAuthor - (7n)
+
++ Testes **8x** - Testa os 3 serviços em GRPC;
+ 
+* São os mesmos testes **7x**;
 
 
 ### INTERNAL_SERVER_ERROR
