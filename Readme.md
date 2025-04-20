@@ -209,6 +209,15 @@ Nesta secção indicam-se as funcionalidades testadas por cada versão.
 + Testes **8x** - Testa os 3 serviços em GRPC;
   * São os mesmos testes **7x**;
 
+#### Versão 7
+
++ Testes **4x** - Testa os 3 serviços em REST;
+  * deleteImage - (4c)
+
++ Testes **6x** - Testa os 3 serviços em GRPC;
+  * deleteImage - (6c)
+
+
 
 ### INTERNAL_SERVER_ERROR
 
