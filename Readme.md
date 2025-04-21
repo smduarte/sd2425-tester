@@ -221,7 +221,7 @@ Nesta secção indicam-se as funcionalidades testadas por cada versão.
 
 + Testes **9x** - Testa falhas de comunicação em REST;
 + Testes **10x** - Testa interoperabilidade entre serviços de diferentes tipos (REST/GRPC);
-+ Testes **11x** - Testa robustez dos servidores com pedidos concorrentes.
++ Testes **11x** - **(Instáveis)** Testa robustez dos servidores com pedidos concorrentes.
 
 
 
