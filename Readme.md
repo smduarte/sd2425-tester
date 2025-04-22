@@ -217,13 +217,17 @@ Nesta secção indicam-se as funcionalidades testadas por cada versão.
 + Testes **6x** - Testa os 3 serviços em GRPC;
   * deleteImage - (6c)
 
-#### Versão 8 (RC)
+#### Versão 8 
 
 + Testes **9x** - Testa falhas de comunicação em REST;
 + Testes **10x** - Testa interoperabilidade entre serviços de diferentes tipos (REST/GRPC);
 + Testes **11x** - **(Instáveis)** Testa robustez dos servidores com pedidos concorrentes.
 
+#### Versão 9 (Final RC)
 
++ Testes **11x** - Testa robustez dos servidores com pedidos concorrentes.
+  Este teste faz um mix de pedidos concorrentes ao serviço Content. Falha se
+  forem retornados erros do tipo INTERNAL_ERROR.
 
 ### INTERNAL_SERVER_ERROR
 
