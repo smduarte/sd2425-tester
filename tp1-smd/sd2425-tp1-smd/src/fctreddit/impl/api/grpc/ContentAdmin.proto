@@ -1,0 +1,17 @@
+
+syntax = "proto3";
+
+option java_package = "fctreddit.impl.grpc.generated_java";
+option java_outer_classname = "ContentAdminProtoBuf";
+
+import "google/protobuf/empty.proto";
+
+service ContentAdmin {
+	
+	rpc handleDeletedUser ( HandleDeletedUserArgs ) returns ( google.protobuf.Empty ) {}
+}
+
+message HandleDeletedUserArgs {
+	string userId = 1;
+	string token = 2;
+}
