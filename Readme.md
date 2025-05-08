@@ -1,3 +1,46 @@
+## Trabalho 2 - *Tester*
+
+Para o segundo trabalho, o Tester espera encontrar no ficheiro ***fctreddit.props*** as seguintes propriedades **adicionais**:
+```
+CLIENT_TRUSTSTORE=<trustore> ; formato: filename,password
+USERS_KEYSTORES=<keystore do serviço users>; formato: users-1,filename,password
+IMAGE_KEYSTORES=<keystore do serviço image>; formato: image-1,filename,password
+CONTENT_KEYSTORES=<keystores do serviço content>; formato: content-1,filename1,password1 content-2,filename2,password2 content-3,filename3,password3
+
+IMAGE_PROXY_MAINCLASS=<classe main do Proxy>
+IMAGE_PROXY_EXTRA_ARGS=<eventais parâmetros adicionais a passar ao Proxy>
+IMAGE_PROXY_PORT=<porto do servidor Proxy>
+IMAGE_PROXY_PROTO=<tipo do servidor Proxy>; valores esperados: rest ou grpc
+
+USERS_REST_EXTRA_ARGS=<eventais parâmetros adicionais a passar ao servidor Users REST>
+IMAGE_REST_EXTRA_ARGS=<eventais parâmetros adicionais a passar ao servidor Image REST>
+CONTENT_REST_EXTRA_ARGS=<eventais parâmetros adicionais a passar ao servidor Content REST>
+
+USERS_GRPC_EXTRA_ARGS=<eventais parâmetros adicionais a passar ao servidor Users GRPC>
+IMAGE_GRPC_EXTRA_ARGS=<eventais parâmetros adicionais a passar ao servidor Image GRPC>
+CONTENT_GRPC_EXTRA_ARGS=<eventais parâmetros adicionais a passar ao servidor Content GRPC>
+
+CONTENT_REP_SERVER_MAINCLASS=<classe main do servidor Content replicado>,
+CONTENT_REP_PORT=<porto do servidor Content replicado>,
+CONTENT_REP_EXTRA_ARGS_FIRST=<eventais parâmetros adicionais a passar ao servidor Content replicado que iniciará como primário, se aplicável>
+CONTENT_REP_EXTRA_ARGS_OTHER=<eventais parâmetros adicionais a passar aos servidores Content replicado secundários, se aplicável>
+```
+
+As propriedades não utilizadas devem ser declaradas, mas podem ser deixadas sem valor:
+```
+USERS_REST_EXTRA_ARGS=
+```
+
+### Opções do Tester específicas para o segundo trabalho:
+
+* **-tp2** - Habilita as novas propriedades e deve ser usado para testar o segundo trabalho.
+
+* **-tls true/false** - Usar para indicar se o Tester deverá ou não usar TLS nos pedidos. Usar **-tls false** se a solução ainda não implementa TLS.
+
+### Novas opções do tester:
+
+* **-single** - Usar junto com **-test XX** para correr apenas o teste indicado e terminar.
+  
 ## Trabalho 1 - *Tester*
 
 O *Tester* tem como objetivo permitir o teste do trabalho prático 1, de forma sistemática e uniforme para todos os grupos.
@@ -245,7 +288,7 @@ Testa as seguintes funcionalidades (REST):
 
 #### Versão 3
 Testa as seguintes funcionalidades (REST):
-* Anúnicos com discovery (3a)
+* Anúncios com discovery (3a)
 * Shorts only: create, get (4a)
 * Shorts only: create, get, get feed, follow/unfollow (4b)
 * Shorts only: create, get, get feed, follow/unfollow, delete (4c)
