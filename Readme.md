@@ -46,7 +46,11 @@ USERS_REST_EXTRA_ARGS=
 ### Novas opções do tester:
 
 * **-single** - Usar junto com **-test XX** para correr apenas o teste indicado e terminar.
-  
+
+### Testes envolvendo o servidor Image Proxy (Imgur)
+
+Para esta bateria de testes, o servidor *Proxy* é sempre lançado ***um argumento*** inicial com o valor **true** ou **false**, para além dos que tenham sido eventualmente indicados no ficheiro fctreddit.props. O valor **true** indica que no arranque, o Proxy deve limpar o seu armazenando de imagens; **false** indica que o **Proxy** deve ser capaz responder a pedidos de imagens que já estejam presentes no seu armazenamento antes do seu arranque.
+
 ## Trabalho 1 - *Tester*
 
 O *Tester* tem como objetivo permitir o teste do trabalho prático 1, de forma sistemática e uniforme para todos os grupos.
