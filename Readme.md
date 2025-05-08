@@ -1,5 +1,7 @@
 ## Trabalho 2 - *Tester*
 
+Docker image: **smduarte/sd2425-tester-tp2**
+
 Para o segundo trabalho, o Tester espera encontrar no ficheiro ***fctreddit.props*** as seguintes propriedades **adicionais**:
 ```
 CLIENT_TRUSTSTORE=<trustore> ; formato: filename,password
@@ -33,9 +35,9 @@ USERS_REST_EXTRA_ARGS=
 
 ### Opções do Tester específicas para o segundo trabalho:
 
-* **-tp2** - Habilita as novas propriedades e deve ser usado para testar o segundo trabalho.
-
-* **-tls true/false** - Usar para indicar se o Tester deverá ou não usar TLS nos pedidos. Usar **-tls false** se a solução ainda não implementa TLS.
+* **-tp1** - Desabilita as novas propriedades do TP2, indicadas acima, e permite usar o novo Tester para testar uma imagem do primeiro trabalho.
+* 
+* **-tls true/false** - Serve para indicar se o Tester deve ou não usar TLS nos pedidos. Usar **-tls false** se a solução (ainda) não implementa TLS.
 
 ### Novas opções do tester:
 
