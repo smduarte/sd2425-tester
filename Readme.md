@@ -40,7 +40,7 @@ USERS_REST_EXTRA_ARGS=
 ### Opções do Tester específicas para o segundo trabalho:
 
 * **-tp1** - Desabilita as novas propriedades do TP2, indicadas acima, e permite usar o novo Tester para testar uma imagem do primeiro trabalho.
-* 
+
 * **-tls true/false** - Serve para indicar se o Tester deve ou não usar TLS nos pedidos. Usar **-tls false** se a solução (ainda) não implementa TLS.
 
 ### Novas opções do tester:
