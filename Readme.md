@@ -1,6 +1,10 @@
 ## Trabalho 2 - *Tester*
 
-Docker image: **smduarte/sd2425-tester-tp2**
+### Imagens Docker:
+
+**smduarte/sd2425-tester-tp2**, versão publicada mais recente;
+
+**smduarte/sd2425-tester-tp2-alpha**, versão em desenvolvimento.
 
 Para o segundo trabalho, o Tester espera encontrar no ficheiro ***fctreddit.props*** as seguintes propriedades **adicionais**:
 ```
