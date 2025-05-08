@@ -49,7 +49,7 @@ USERS_REST_EXTRA_ARGS=
 
 ### Testes envolvendo o servidor Image Proxy (Imgur)
 
-Para esta bateria de testes, o servidor *Proxy* é sempre lançado ***um argumento*** inicial com o valor **true** ou **false**, para além dos que tenham sido eventualmente indicados no ficheiro fctreddit.props. O valor **true** indica que no arranque, o Proxy deve limpar o seu armazenando de imagens; **false** indica que o **Proxy** deve ser capaz responder a pedidos de imagens que já estejam presentes no seu armazenamento antes do seu arranque.
+Para esta bateria de testes, o servidor *Proxy* é sempre lançado ***um argumento*** inicial com o valor **true** ou **false**, para além dos que tenham sido eventualmente indicados no ficheiro fctreddit.props. O valor **true** indica que no arranque, o Proxy deve limpar o seu armazenamento de imagens no serviço externo **imgur**; **false** indica que o **Proxy** deve ser capaz de responder a pedidos de imagens que já estejam presentes no serviço externo **imgur**, antes do seu arranque.
 
 ## Trabalho 1 - *Tester*
 
