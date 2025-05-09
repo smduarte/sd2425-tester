@@ -9,8 +9,8 @@
 Para o segundo trabalho, o Tester espera encontrar no ficheiro ***fctreddit.props*** as seguintes propriedades **adicionais**:
 ```
 CLIENT_TRUSTSTORE=<trustore> ; formato: filename,password
-USERS_KEYSTORES=<keystore do serviço users>; formato: users-1,filename,password
-IMAGE_KEYSTORES=<keystore do serviço image>; formato: image-1,filename,password
+USERS_KEYSTORES=<keystores do serviço users>; formato: users-1,filename,password
+IMAGE_KEYSTORES=<keystores do serviço image>; formato: image-1,filename1,password1 image-2,filename2,password2
 CONTENT_KEYSTORES=<keystores do serviço content>; formato: content-1,filename1,password1 content-2,filename2,password2 content-3,filename3,password3
 
 IMAGE_PROXY_MAINCLASS=<classe main do Proxy>
