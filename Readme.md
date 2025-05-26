@@ -43,12 +43,15 @@ USERS_REST_EXTRA_ARGS=
 
 * **-tls true/false** - Serve para indicar se o Tester deve ou não usar TLS nos pedidos. Usar **-tls false** se a solução (ainda) não implementa TLS.
 
+* **-services true/false** - Indica se o Kafka/Zookeeper deve ser lançado; **(default: true)**.
+
+* **-kafkaSleep** - Indica o tempo de espera entre o lançamento do Kafka e os servidores do trabalho **(default: 10 segundos)**.
+
+* **-gcSleep** - Indica o tempo de espera até verificar se o mecanismo de GC/Integridade atuou como esperado **(default: 35 segundos)**.
+
 ### Novas opções do tester:
 
 * **-single** - Usar junto com **-test XX** para correr apenas o teste indicado e terminar.
-* **-services true/false** - Indica se o Kafka/Zookeeper deve ser lançado; **(default: true)**.
-* **-kafkaSleep** - Indica o tempo de espera entre o lançamento do Kafka e os servidores do trabalho **(default: 10 segundos)**.
-* **-gcSleep** - Indica o tempo de espera até verificar se o mecanismo de GC/Integridade atuou como esperado **(default: 35 segundos)**.
 
 ### Testes envolvendo o servidor Image Proxy (Imgur)
 
