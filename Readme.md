@@ -76,10 +76,10 @@ Para esta bateria de testes, o servidor *Proxy* é sempre lançado ***um argumen
 #### Versão 12
 
 + Testes **12x** - Image/Content Integrity (GC);
- + Check if mediaUrl that point to deleted imagens are set to null (13a)
- + Check if images are deleted when they are no longer referenced because of deleted posts (13b)
- + Check if images are deleted when they are no longer referenced because of updated posts (13c)
- + Check if images are deleted when they are created by they are not refereced after the gcSleep timeout (13d)
+   * Check if mediaUrl that point to deleted imagens are set to null (13a)
+   * Check if images are deleted when they are no longer referenced because of deleted posts (13b)
+   * Check if images are deleted when they are no longer referenced because of updated posts (13c)
+   * Check if images are deleted when they are created by they are not refereced after the gcSleep timeout (13d)
 
 ## Trabalho 1 - *Tester*
 
