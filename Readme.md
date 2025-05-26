@@ -57,6 +57,30 @@ USERS_REST_EXTRA_ARGS=
 
 Para esta bateria de testes, o servidor *Proxy* é sempre lançado ***um argumento*** inicial com o valor **true** ou **false**, para além dos que tenham sido eventualmente indicados no ficheiro fctreddit.props. O valor **true** indica que no arranque, o Proxy deve limpar o seu armazenamento de imagens no serviço externo **imgur**; **false** indica que o **Proxy** deve ser capaz de responder a pedidos de imagens que já estejam presentes no serviço externo **imgur**, antes do seu arranque.
 
+
+## Versões
+
+#### Versão 10
+
++ Testes **2x - 11x** - TLS;
+
+#### Versão 11
+
++ Testes **12x** - Imgur Proxy;
+   * createImage - (12a)
+   * getImage - (12b)
+   * deleteImage - (12c)
+   * getImage w/ restart (both proxies with same clearState flag) (12d)
+   * getImage w/ mixed restart (proxies with different clearState flags) (12e)
+ 
+#### Versão 12
+
++ Testes **12x** - Image/Content Integrity (GC);
+ + Check if mediaUrl that point to deleted imagens are set to null (13a)
+ + Check if images are deleted when they are no longer referenced because of deleted posts (13b)
+ + Check if images are deleted when they are no longer referenced because of updated posts (13c)
+ + Check if images are deleted when they are created by they are not refereced after the gcSleep timeout (13d)
+
 ## Trabalho 1 - *Tester*
 
 O *Tester* tem como objetivo permitir o teste do trabalho prático 1, de forma sistemática e uniforme para todos os grupos.
