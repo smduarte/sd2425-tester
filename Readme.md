@@ -75,7 +75,7 @@ Para esta bateria de testes, o servidor *Proxy* é sempre lançado ***um argumen
  
 #### Versão 12
 
-+ Testes **12x** - Image/Content Integrity (GC);
++ Testes **13x** - Image/Content Integrity (GC);
    * Check if mediaUrl that point to deleted imagens are set to null (13a)
    * Check if images are deleted when they are no longer referenced because of deleted posts (13b)
    * Check if images are deleted when they are no longer referenced because of updated posts (13c)
