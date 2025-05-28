@@ -81,6 +81,24 @@ Para esta bateria de testes, o servidor *Proxy* é sempre lançado ***um argumen
    * Check if images are deleted when they are no longer referenced because of updated posts (13c)
    * Check if images are deleted when they are created by they are not refereced after the gcSleep timeout (13d)
 
+#### Versão 13 (RC)
+
++ Testes **14x** - Content Replication s/ Falhas;
+  Estes testes correspondem aos testes 7x do TP1 que testam o serviço de conteúdos.
+  Foram excluídos testes que despoletem ações no serviço Content por eventos noutros serviços (Users/Image);
+  Nenhum réplica falha.
+  As operações, sejam escritas ou leituras, são dirigidas a qualquer réplica;
+  
+#### Versão 14 (ALPHA)
+
++ Testes **15x** - Content Replication c/ 1 Falha num secundário estático;
+ - Entende-se por secundários estáticos, os servidores Content que foram lançados com os argumentos colocados na prop: **CONTENT_REP_EXTRA_ARGS_OTHER**
+ - Não testa a eventual recuperação do secundário; depois de falhado, é esquecido pelo Tester.
+
++ Testes **16x** - Content Replication c/ 1 Falha no primário estático;
+ - Entende-se por primário estático, o servidor Content que foi lançado com os argumentos colocados na prop: **CONTENT_REP_EXTRA_ARGS_FIRST**
+ - Não testa a eventual recuperação do primário; depois de falhado, é esquecido pelo Tester.
+   
 ## Trabalho 1 - *Tester*
 
 O *Tester* tem como objetivo permitir o teste do trabalho prático 1, de forma sistemática e uniforme para todos os grupos.
