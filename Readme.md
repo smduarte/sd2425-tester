@@ -49,6 +49,13 @@ USERS_REST_EXTRA_ARGS=
 
 * **-gcSleep** - Indica o tempo de espera até verificar se o mecanismo de GC/Integridade atuou como esperado **(default: 35 segundos)**.
 
+### Opções do Tester que podem ajudar na replicação:
+
+* **-restDeadline** - Indica o tempo de espera/timeout, incluindo tentativas, até falhar um pedido com **TESTER_TIMEOUT**, (default 20000 ms). 
+
+* **-replicaTimeout** - Indica o tempo de espera/timeout até desistir de um pedido a uma réplica (falhada) **(default: 10000 ms)**. Pode ser aumentado para dar tempo para eleger o novo primário, por exemplo. Deve ser menor que o valor de **restDeadline**.
+
+
 ### Novas opções do tester:
 
 * **-single** - Usar junto com **-test XX** para correr apenas o teste indicado e terminar.
