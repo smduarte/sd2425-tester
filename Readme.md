@@ -88,7 +88,7 @@ Para esta bateria de testes, o servidor *Proxy* é sempre lançado ***um argumen
    * Check if images are deleted when they are no longer referenced because of updated posts (13c)
    * Check if images are deleted when they are created by they are not refereced after the gcSleep timeout (13d)
 
-#### Versão 13 (RC)
+#### Versão 13
 
 + Testes **14x** - Content Replication s/ Falhas;
   Estes testes correspondem aos testes 7x do TP1 que testam o serviço de conteúdos.
@@ -96,7 +96,7 @@ Para esta bateria de testes, o servidor *Proxy* é sempre lançado ***um argumen
   Nenhum réplica falha.
   As operações, sejam escritas ou leituras, são dirigidas a qualquer réplica;
   
-#### Versão 14 (ALPHA)
+#### Versão 14
 
 + Testes **15x** - Content Replication c/ 1 Falha num secundário estático;
  - Entende-se por secundários estáticos, os servidores Content que foram lançados com os argumentos colocados na prop: **CONTENT_REP_EXTRA_ARGS_OTHER**
@@ -105,7 +105,21 @@ Para esta bateria de testes, o servidor *Proxy* é sempre lançado ***um argumen
 + Testes **16x** - Content Replication c/ 1 Falha no primário estático;
  - Entende-se por primário estático, o servidor Content que foi lançado com os argumentos colocados na prop: **CONTENT_REP_EXTRA_ARGS_FIRST**
  - Não testa a eventual recuperação do primário; depois de falhado, é esquecido pelo Tester.
-   
+
+#### Versão 15
+
++ Testes **17x** - Content Replication s/ Falhas + GC;
+
++ Testes **18x** - Content Replication c/ Falha secundário estático + GC;
+
++ Testes **19x** - Content Replication c/ Falhas primário estático + GC;
+  
+Para a solução de replicação baseada em Kafka, os testes 18 e 19 não têm qualquer diferença, uma vez que todas
+as réplicas estão ao mesmo nível.
+
+*Não houve alterações na lógica dos testes desda a passada quinta-feira, dia 29 de Maio*, apenas
+pequenas correções de *bugs*.
+
 ## Trabalho 1 - *Tester*
 
 O *Tester* tem como objetivo permitir o teste do trabalho prático 1, de forma sistemática e uniforme para todos os grupos.
